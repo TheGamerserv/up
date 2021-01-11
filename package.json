@@ -1,0 +1,35 @@
+{
+  "name": "thegamerserv",
+  "version": "1.0.0",
+  "description": "Lanceur pour le serveur The Gamer serv",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "buildt": "rimraf git-checker-* && electron-packager . --platform=darwin,linux,win32 --arch=x64 --icon=app --overwrite",
+    "buildW": "electron-builder build -w",
+    "build": "electron-builder build --win --publish never",
+"deploy": "electron-builder build --win --publish always"
+  },
+  "author": "The Gamer serv",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.3.5",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "electron-updater": "^4.3.5",
+    "git": "^0.1.5",
+    "minecraft-launcher-core": "^3.14.1"
+  },
+  "build": {
+    "appId": "com.thegamerserv.launcher",
+    "icon": "asset/icon.ico"
+  },
+
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/TheGamerserv/up.git" 
+  }
+}

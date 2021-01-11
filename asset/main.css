@@ -1,0 +1,225 @@
+* {
+    font-family: sans-serif;
+  }
+
+  #notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .hidden {
+    display: none;
+  }
+
+.menueffect {
+	position: absolute;
+	top: 3px;
+	left: 20%;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.menueffect {
+    background-color: black;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+
+.selectpage {
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	padding: 1em 0;
+	display: inline-block;
+	transition: all .4s ease-in-out;
+}
+
+.selectpage a {
+	font-size: 20px;
+}
+
+.line {
+	width: 90px;
+	height: 2px;
+	background-color: #00fff8;
+    transition: all .4s ease-in-out;
+    transform: translate(465px);
+}
+
+.selectpage:nth-child(1):hover ~ .line {
+    transform: translate(55px);
+    width: 90px;
+}
+
+.selectpage:nth-child(1):hover {
+	color: #00fff8;
+	text-decoration: none;
+}
+
+.selectpage:nth-child(2):hover ~ .line {
+	transform: translate(260px);
+}
+
+.selectpage:nth-child(2):hover {
+	color: #00fff8;
+	text-decoration: none;
+}
+
+.selectpage:nth-child(3):hover ~ .line {
+	transform: translate(465px);
+}
+
+.selectpage:nth-child(3):hover {
+	color: #00fff8;
+	text-decoration: none;
+}
+
+.selectpage:nth-child(4):hover ~ .line {
+	transform: translate(670px);
+}
+
+.selectpage:nth-child(4):hover {
+	color: #00fff8;
+	text-decoration: none;
+}
+
+.selectpage:nth-child(5):hover ~ .line {
+	transform: translate(380px);
+}
+
+.selectpage:nth-child(5):hover {
+	color: #00fff8;
+	text-decoration: none;
+}
+
+
+.settings {
+    background-color: blanchedalmond;
+}
+
+.play {
+    padding-left: 38%;
+    bottom: 100px;
+    width: 100px;
+    background: url("./asset/btn/play_normal.png");
+}
+
+
+
+  #news {
+    display: block;
+    padding: 70px 0;
+    text-align: center;
+    margin: 10%;
+    color: white;
+  }
+
+  #news img {
+    width: 350px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 50%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    margin-right: 25vw;
+    margin-left: 25vw;
+  }
+
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #ff0000;
+    color: white;
+  }
+
+  .modal-body {
+    padding: 16px 16px;
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
